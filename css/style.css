@@ -44,13 +44,25 @@ body {
     display: block;
     opacity: 1;
     padding: 0 30px;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.section.active {
+    z-index: 2;
+    opacity: 1;
 }
 .hidden {
     display: none !important;
 }
-.main-content {
+/* .main-content {
     padding-left: 270px;
-}
+} */
 .container {
     max-width: 1100px;
     width: 100%;

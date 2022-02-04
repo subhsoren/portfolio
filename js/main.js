@@ -17,8 +17,14 @@ const nav = document.querySelector('.nav'),
     const a = navList[i].querySelector("a");
     // console.log(a);
     a.addEventListener('click', function() {
+        for(let i=0; i<totalSection; i++){
+            allSection[i].classList.remove("back-section");
+        }
         // console.log(this);
         for (let j=0; j<totalNavList; j++) {
+            if(navList[j].querySelector("a").classList.contains("active")) {
+                allSection[j].classList.add("back-section");
+            }
             navList[j].querySelector("a").classList.remove("active");
         }
         this.classList.add("active")

@@ -39,3 +39,14 @@ const nav = document.querySelector('.nav'),
     //    console.log(target);
     document.querySelector("#" + target).classList.add("active");
    }
+   const navTogglerBtn = document.querySelector('.nav-toggler'),
+   aside = document.querySelector(".aside");
+   navTogglerBtn.addEventListener('click', () => {
+       asideSectionTogglerBtn();
+   })
+
+   function asideSectionTogglerBtn() {
+       aside.classList.toggle("open");
+       
+
+   }

@@ -753,9 +753,20 @@ h3.my-profession {
 @media (max-width: 1199px) {
     .aside {
         left: -270px;
+        transition: all 0.3s ease;
     }
-    .main-content {
+    .aside.open {
+        left: 0;
+    }
+    /* .main-content {
         padding-left: 0;
+    } */
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+    .section {
+        left: 0;
     }
     .about .about-content .personal-info .info-item p span {
         display: block;
